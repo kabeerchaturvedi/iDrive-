@@ -1,0 +1,103 @@
+.main-div {
+  display: flex;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+body {
+  margin: 0;
+}
+.sidebar {
+  left: 0;
+  top: 0;
+  width: 10%;
+  height: 100vh;
+  background-color: #00548c;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  height: 20%;
+  background-color: #05314d;
+  align-items: center;
+  justify-content: center;
+}
+.error-info {
+  background-color: #ffece7;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.top {
+  position: relative;
+}
+.btn-cancel {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.navlist {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.user-icon {
+  background: url("source/sprite_icons.png") no-repeat;
+  background-position: 0 0;
+  width: 28px;
+  height: 490px;
+}
+.input-fields {
+  padding: 10px 5px 10px 5px;
+}
+.head {
+  height: 10%;
+  border: 1px solid grey;
+}
+.head .info {
+  border: 0;
+  font-size: larger;
+  color: white;
+}
+.main {
+  height: 10%;
+  border: 1px solid grey;
+  padding-left: 20px;
+}
+.main-right {
+  float: right;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.main-right .btn-add {
+  background-color: #168cd7;
+  box-shadow: none;
+  border: 0;
+  font-size: larger;
+  color: white;
+}
+
+.table-users {
+  height: 80%;
+  width: 100%;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+.head .info {
+  float: right;
+  background-color: #168cd7;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 250px;
+  right: 220px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}

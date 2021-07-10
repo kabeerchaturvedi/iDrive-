@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="sidebar">
+        <div class="logo">
+          <img src="source/Logo.png" />
+        </div>
+        <div class="navlist">
+          <div class="user-icon"></div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="head">
+          <div class="info">A</div>
+        </div>
+        <div class="main">
+          <div class="main-left">
+            <span> Users </span>
+          </div>
+          <div class="main-right">
+            <span> Number of users:</span>
+            <button class="btn-add" onclick="openForm()">Add user</button>
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <div class="top" style="height: 10%">
+                  <div style="color: #757a7e">
+                    <h3>Add User</h3>
+                  </div>
+                  <div id="error-msg" class="error-info"></div>
+                  <div>
+                    <button
+                      type="button"
+                      class="btn-cancel"
+                      onclick="closeForm()"
+                    >
+                      X
+                    </button>
+                  </div>
+                </div>
+                <div style="display: flex">
+                  <div class="input-fields">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      name="name"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="input-fields">
+                    <input
+                      type="text"
+                      placeholder="Enter Email"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div style="display: flex">
+                  <div class="input-fields">
+                    <input
+                      type="password"
+                      placeholder=" Password"
+                      id="pwd"
+                      name="pwd"
+                      required
+                    />
+                  </div>
+                  <div class="input-fields">
+                    <input
+                      type="password"
+                      placeholder="Confirm Password"
+                      id="pwd2"
+                      name="pwd2"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn"
+                  style="background-color: #e48065"
+                >
+                  Add User
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="table-users">
+          <table style="width: 100%">
+            <tr style="background-color: #f7f7f7">
+              <th>Email Address</th>
+              <th>Name</th>
+              <th>Created on</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="App.js"></script>
+</html>
